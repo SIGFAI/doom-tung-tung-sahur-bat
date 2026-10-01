@@ -1,0 +1,1 @@
+Put mod.pk3 next to GZDoom and start it with: gzdoom.exe -iwad freedoom2.wad -file mod.pk3. You start with the bat selected; press 1 to pick it, fire to swing and launch monsters.
