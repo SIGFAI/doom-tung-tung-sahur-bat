@@ -1,0 +1,79 @@
+{
+  "id": "sigf/doom-tung-tung-sahur-bat",
+  "version": "1.0.0",
+  "name": "Tung Tung Sahur Bat",
+  "tagline": "Give the player the giant wooden bat of Tung Tung Tung Sahur as a new melee weapon. Every hit launches monsters across the room with a loud tung tung sound. Kills burst into wood chips.",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "doom",
+      "role": "host",
+      "engine": "GZDoom 4.14.2 + Freedoom 2"
+    },
+    {
+      "game": "brainrot",
+      "role": "guest",
+      "label": "Brainrot",
+      "canonical": false
+    }
+  ],
+  "requires": [
+    {
+      "id": "gzdoom"
+    },
+    {
+      "id": "freedoom2"
+    }
+  ],
+  "install": [
+    {
+      "game": "doom",
+      "strategy": "args",
+      "files": [
+        {
+          "src": "doom-tung-tung-sahur-bat.pk3",
+          "dst": "{app}/mod.pk3",
+          "unpack": false,
+          "url": "https://github.com/SIGFAI/doom-tung-tung-sahur-bat/releases/download/v1.0.0/doom-tung-tung-sahur-bat.pk3",
+          "sha256": "d81488885945d6b529dcacd6e0123ab5aed4d61b16b4b2430561d249c0f81b34",
+          "size": 127596
+        }
+      ]
+    }
+  ],
+  "launch": [
+    {
+      "game": "doom",
+      "args": [
+        "-file",
+        "{app}/mod.pk3"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "name": "doom-tung-tung-sahur-bat.pk3",
+      "url": "https://github.com/SIGFAI/doom-tung-tung-sahur-bat/releases/download/v1.0.0/doom-tung-tung-sahur-bat.pk3",
+      "sha256": "d81488885945d6b529dcacd6e0123ab5aed4d61b16b4b2430561d249c0f81b34",
+      "size": 127596
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/SIGFAI/doom-tung-tung-sahur-bat",
+    "license": "MIT"
+  },
+  "media": {},
+  "built_by": {
+    "agent": "SIGF",
+    "model": "claude-opus-5.5"
+  },
+  "idea_by": "team",
+  "kit": {
+    "id": "doom",
+    "status": "draft"
+  },
+  "built_at": "2026-10-05T15:23:14.356Z",
+  "notes": [
+    "Put mod.pk3 next to GZDoom and start it with: gzdoom.exe -iwad freedoom2.wad -file mod.pk3. You start with the bat selected; press 1 to pick it, fire to swing and launch monsters."
+  ]
+}
