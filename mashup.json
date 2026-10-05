@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "name": "Tung Tung Sahur Bat",
   "tagline": "Give the player the giant wooden bat of Tung Tung Tung Sahur as a new melee weapon. Every hit launches monsters across the room with a loud tung tung sound. Kills burst into wood chips.",
+  "how_to_play": [
+    "Smash demons with the giant wooden bat of Tung Tung Tung Sahur and launch them across the room.",
+    "You get the bat a moment after the level starts; it sits in weapon slot 1, so press 1 to switch back to it.",
+    "Fire to swing: each swing sends a shockwave that knocks every monster it hits flying.",
+    "Monsters slammed into walls take extra damage and burst into wood chips."
+  ],
   "kind": "mashup",
   "games": [
     {
@@ -72,8 +78,5 @@
     "id": "doom",
     "status": "draft"
   },
-  "built_at": "2026-10-05T15:23:14.356Z",
-  "notes": [
-    "Put mod.pk3 next to GZDoom and start it with: gzdoom.exe -iwad freedoom2.wad -file mod.pk3. You start with the bat selected; press 1 to pick it, fire to swing and launch monsters."
-  ]
+  "built_at": "2026-10-05T15:23:14.356Z"
 }
